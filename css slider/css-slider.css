@@ -1,0 +1,88 @@
+body {
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+}
+.slider-wrapper {
+  width: 500px;
+  overflow: hidden;
+}
+
+.slider-wrapper img {
+  width: 500px;
+  height: 300px;
+}
+
+.slider-wrapper ul {
+  width: 10000px;
+  position: relative;
+  -webkit-animation: slide 20s;
+  list-style-type: none;
+}
+
+.slider-wrapper li {
+  float:left;
+  position: relative;
+  margin-right: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.slider-wrapper ul, .slider-wrapper h5 {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.slider-wrapper ul:hover, .slider-wrapper ul:hover h5{
+  -webkit-animation-play-state:paused;
+}
+
+.slider-wrapper a{
+  text-decoration: none;
+}
+
+.slider-wrapper h5 {
+  position: absolute;
+  bottom: 4px;
+  background: rgba(0,0,0,.3);
+  color: white;
+  padding:10px 5px;
+  margin-bottom: 0;
+  width: 100%;
+  -webkit-animation:headings 20s;
+}
+
+@-webkit-keyframes 'slide' {
+  10% {
+    left: 0;
+  }
+  15%, 30% {
+    left: -500px;
+  }
+  35%, 50% {
+    left:-1000px;
+  }
+  55%, 70% {
+    left: -1500px;
+  }
+  
+ 75%, 90% {
+   left: -2000px;
+ }
+  
+ 93% {
+   left: 0;
+}
+  
+ @-webkit-keyframes 'headings' {
+  10%, 15%,30%,35%,50%,55%,70%,75%,90% {
+    bottom: 4px;
+  }
+  
+   13%,33%,53%,73%,93% {
+     bottom: -100%;
+   }
+ }
