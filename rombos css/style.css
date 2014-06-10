@@ -1,0 +1,55 @@
+.border {
+  height: 0;
+  width: 0;
+  float: left;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid red;
+}
+.border2 {
+  height: 0;
+  width: 0;
+  float: left;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid red;
+}
+
+.icon {
+  position: relative;
+  top: -10px;
+}
+
+* {
+    -webkit-transition: -webkit-transform 0.2s ease-out, border 0.3s ease-out;
+}
+
+#parent { position: relative; }
+#rombo1 {
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
+#rombo2 {
+  position: absolute;
+  top: 21px;
+  left: 0px;
+}
+#rombo3 {
+  position: absolute;
+  top: 21px;
+  left: 42px;
+}
+#rombo4 {
+  position: absolute;
+  top: 42px;
+  left: 21px;
+}
+
+#rombo3:hover {
+  -webkit-transform: translate(0, -5px);
+}
+#rombo3:hover .border, #rombo3:hover .border2 {
+  border-right-color: green;
+  border-left-color: green;
+}
