@@ -4,7 +4,7 @@
   float: left;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 20px solid red;
+  border-right: 20px solid #ee0000;
 }
 .border2 {
   height: 0;
@@ -12,16 +12,18 @@
   float: left;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid red;
+  border-left: 20px solid #ee0000;
 }
 
-.icon {
-  position: relative;
-  top: -10px;
+span {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #fff;
 }
 
 * {
-    -webkit-transition: -webkit-transform 0.2s ease-out, border 0.3s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out, border 1.3s ease-out;
 }
 
 #parent { position: relative; }
@@ -46,10 +48,14 @@
   left: 21px;
 }
 
-#rombo3:hover {
-  -webkit-transform: translate(0, -5px);
+#rombo1:hover,
+#rombo2:hover,
+#rombo3:hover,
+#rombo4:hover {
+  -webkit-transform: translate(0, -2px);
 }
-#rombo3:hover .border, #rombo3:hover .border2 {
-  border-right-color: green;
-  border-left-color: green;
+
+.foldable:hover .border, .foldable:hover .border2 {
+  border-right-color: #dd0000;
+  border-left-color: #ff0000;
 }
