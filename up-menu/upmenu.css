@@ -50,10 +50,10 @@ body {
 }
 
 #up-menu .ball {
-	-webkit-animation: bounce 2s 1 forwards;
-	-moz-animation: bounce 2s 1 forwards;
-	-ms-animation: bounce 2s 1 forwards;
-	animation: bounce 2s 1 forwards;
+		-webkit-animation: bounce 2s 1 forwards;
+		-moz-animation: bounce 2s 1 forwards;
+		-ms-animation: bounce 2s 1 forwards;
+		animation: bounce 2s 1 forwards;
 
 	@-webkit-keyframes bounce {
 		0% {
