@@ -50,10 +50,10 @@ body {
 }
 
 #up-menu .ball {
-	-webkit-animation: bounce 800ms ease-out;
-	-moz-animation: bounce 800ms ease-out;
-	-o-animation: bounce 800ms ease-out;
-	animation: bounce 800ms ease-out;
+	-webkit-animation: bounce 900ms ease-out;
+	-moz-animation: bounce 900ms ease-out;
+	-o-animation: bounce 900ms ease-out;
+	animation: bounce 900ms ease-out;
 }
 
 	/* Webkit, Chrome and Safari */
