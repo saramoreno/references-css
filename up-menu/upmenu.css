@@ -46,7 +46,7 @@ body {
 	color: #fff;
 	padding: 20px 25px;
 	border-radius: 50%;
-	font-size: 28px;
+	font-size: 26px;
 }
 
 #up-menu .ball {
@@ -55,6 +55,8 @@ body {
 	-o-animation: bounce 800ms ease-out;
 	animation: bounce 800ms ease-out;
 }
+
+	/* Webkit, Chrome and Safari */
 
 @-webkit-keyframes bounce {
   0% {
